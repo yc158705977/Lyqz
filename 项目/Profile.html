@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>收货地址</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .foot {
+            background: #fff;
+        }
+
+        .tc .tc_nr .from p {
+            position: absolute;
+            left: 230px;
+            top: 125px;
+            height: 60px;
+            line-height: 60px;
+            color: #ff5000;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .bj_omit, .bj_add, .bj_compile {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            height: 100%;
+            background: url(images/zhezhao.png) left top;
+            display: none;
+        }
+    </style>
+    <script class="resources library" src="js/area.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="shortcut">
+    <div class="inner">
+        <div class="shortcut_w">
+            <ul class="fl">
+                <li>
+                    <a href="#"> 采购城市： <span title="北京">北京</span><img class="xl" src="images/zy_xl.png"/> </a>
+                </li>
+            </ul>
+            <ul class="fr">
+                <li>
+                    <a href="#" target="_blank">ai小王子</a>
+                    <a href="#" target="_blank">退出</a>
+                </li>
+                <li class="spacer"></li>
+                <li><a href="#">我的订单</a></li>
+                <li class="spacer"></li>
+                <li>
+                    <a href="#">我的绿优<img class="xl" src="images/zy_xl.png"/></a>
+                </li>
+                <li class="spacer"></li>
+                <li><a href="#"><img class="xwx" src="images/zy_xsj.png"/> 手机客户端</a></li>
+                <li class="spacer"></li>
+                <li><a href="#"><img class="xwx" src="images/zy_xwx.png"/> 关于绿优 <img class="xl" src="images/zy_xl.png"/></a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div id="personal_nav">
+    <div class="inner">
+        <div class="shortcut_nav">
+            <div class="shortcut_bloGo fl">
+                <a href="#"><img src="images/per_logo.png"/></a>
+            </div>
+            <div class="shortcut_search2 fl">
+                <input type="text" class="fl" placeholder="绿优全装三合一普通砂浆">
+                <button type="button" class="fr"><img src="images/person_ss.png"/></button>
+            </div>
+            <div class="shortcut_shopping2 fr">
+                <img src="images/zy_xgwc.png"/>
+                <a href="#">我的购物车</a>
+                <i>1</i>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="personal_main" class="bj2">
+    <div class="inner">
+        <div class="personal_main">
+            <div class="personal_mainL fl">
+                <dl>
+                    <dt><a href="#">订单中心</a></dt>
+                    <dd><a href="All_indent.html">我的订单</a></dd>
+                    <dd><a href="#">评价</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">客户服务</a></dt>
+                    <dd><a href="My_favorite.html">我的收藏</a></dd>
+                    <dd><a href="#">退货/退款</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">资产中心</a></dt>
+                    <dd><a href="#">绿优钱包</a></dd>
+                    <dd><a href="#">我的积分</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">企业号</a></dt>
+                    <dd><a href="#">子账号</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">个人设置</a></dt>
+                    <dd><a href="personal.html">个人信息</a></dd>
+                    <dd><a href="safety.html">账户安全</a></dd>
+                    <dd class="f5"><a href="Profile.html">收货地址</a></dd>
+                    <dd><a href="inVoice.html">增票资质</a></dd>
+                </dl>
+            </div>
+            <div class="personal_mainR fl">
+                <div class="personal_mainR1">
+                    <div class="span">
+                        <span>收货地址</span>
+                    </div>
+
+                </div>
+                <div class="proFile">
+                    <ul class="proFile2">
+                        <li class="first"><a href="#" id="newly">新增收货地址</a></li>
+                        <li>您已创建<span class="tj">0</span>个收货地址，最多可创建<span>50</span>个</li>
+                    </ul>
+                    <div class="address">
+                        <div class="addSst">
+                            <h3>岳飞<a href="#"></a><span>默认地址</span></h3>
+
+                            <div class="extra">
+                                <a href="#" class="del_btn"></a>
+                            </div>
+                        </div>
+                        <div class="addSsb">
+                            <div class="item-lol fl">
+                                <div class="item">
+                                    <span class="label fl">收货人：</span>
+
+                                    <div class="fl label2">岳飞</div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="item">
+                                    <span class="label fl">所在地区：</span>
+
+                                    <div class="fl label2">北京 北京市 朝阳区</div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="item">
+                                    <span class="label fl">详细地区：</span>
+
+                                    <div class="fl label2">亦庄经济技术开发区 地盛南街甲一号院 中电金扬科技园</div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="item">
+                                    <span class="label fl">手机号：</span>
+
+                                    <div class="fl label2">12345678900</div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="item-rol fr">
+                                <a href="#" style="display: none;">设为默认</a>
+                                <a class="compile" href="#">编辑</a>
+
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                    <div class="address">
+                        <div class="addSst">
+                            <h3>岳飞<a href="#"></a><span style="display: none;">默认地址</span></h3>
+
+                            <div class="extra">
+                                <a href="#" class="del_btn"></a>
+                            </div>
+                        </div>
+                        <div class="addSsb">
+                            <div class="item-lol fl">
+                                <div class="item">
+                                    <span class="label fl">收货人：</span>
+
+                                    <div class="fl label2">岳飞</div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="item">
+                                    <span class="label fl">所在地区：</span>
+
+                                    <div class="fl label2">北京 北京市 朝阳区</div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="item">
+                                    <span class="label fl">详细地区：</span>
+
+                                    <div class="fl label2">亦庄经济技术开发区 地盛南街甲一号院 中电金扬科技园</div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="item">
+                                    <span class="label fl">手机号：</span>
+
+                                    <div class="fl label2">12345678900</div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="item-rol fr">
+                                <a href="#">设为默认</a>
+                                <a class="compile" href="#">编辑</a>
+
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bj_add">
+    <div class="tc" id="tc_add" style="top:50%;margin-top: -250px;">
+        <div class="tc_bt" style="width:628px;">
+            <span>添加新地址</span>
+            <img src="images/profile_yy.jpg">
+        </div>
+        <div class="tc_nr" style="width:628px;height:376px;overflow: hidden;">
+            <div class="from">
+                <div class="item">
+                <span class="label">
+                    <span style="color:red">*</span>
+                    收货人：
+                </span>
+
+                    <div class="label_fl">
+                        <input type="text" class="itxt">
+                    </div>
+                </div>
+                <div class="item">
+                 <span class="label">
+                    <span style="color:red">*</span>
+                    手机号码：
+                </span>
+
+                    <div class="label_fl">
+                        <input type="text" class="itxt">
+                    </div>
+                </div>
+                <div class="item">
+                <span class="label">
+                    <span style="color:red">*</span>
+                    所在地区：
+                </span>
+
+                    <div class="label_fl">
+                        <select id="s_province" name="s_province"></select>  
+                        <select id="s_city" name="s_city"></select>  
+                        <select id="s_county" name="s_county"></select>
+                        <script type="text/javascript">_init_area2();</script>
+                    </div>
+                </div>
+                <div class="item">
+                 <span class="label">
+                    <span style="color:red">*</span>
+                    详细地址：
+                </span>
+
+                    <div class="label_fl">
+                        <input type="text" class="itxt itxt2">
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="label">&nbsp;</span>
+
+                    <div class="label_fl">
+                        <input id="moRen" type="checkbox">
+                        <label for="moRen">设为默认地址</label>
+                    </div>
+
+                </div>
+                <ul class="save">
+                    <li class="first">取消</li>
+                    <li>保存</li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <a class="close" title="关闭">
+            <span></span>
+        </a>
+    </div>
+</div>
+<div class="bj_compile">
+    <div class="tc" id="tc_compile" style="top: 50%;margin-top: -250px;">
+        <div class="tc_bt" style="width:628px">
+            <span>编辑地址</span>
+            <img src="images/profile_yy.jpg">
+        </div>
+        <div class="tc_nr" style="width:628px;height:376px;overflow: hidden;">
+            <div class="from">
+                <div class="item">
+                <span class="label">
+                    <span style="color:red">*</span>
+                    收货人：
+                </span>
+
+                    <div class="label_fl">
+                        <input type="text" class="itxt">
+                    </div>
+                </div>
+                <div class="item">
+                 <span class="label">
+                    <span style="color:red">*</span>
+                    手机号码：
+                </span>
+
+                    <div class="label_fl">
+                        <input type="text" class="itxt">
+                    </div>
+                </div>
+                <div class="item">
+                <span class="label">
+                    <span style="color:red">*</span>
+                    所在地区：
+                </span>
+
+                    <div class="label_fl">
+                        <select id="province" name="province"></select>  
+                        <select id="city" name="city"></select>  
+                        <select id="county" name="county"></select>
+                        <script type="text/javascript">_init_area();</script>
+                    </div>
+                </div>
+                <div class="item">
+                 <span class="label">
+                    <span style="color:red">*</span>
+                    详细地址：
+                </span>
+
+                    <div class="label_fl">
+                        <input type="text" class="itxt itxt2">
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="label">&nbsp;</span>
+
+                    <div class="label_fl">
+                        <input id="moRen2" type="checkbox">
+                        <label for="moRen2">设为默认地址</label>
+                    </div>
+
+                </div>
+                <ul class="save">
+                    <li class="first">取消</li>
+                    <li>保存</li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <a class="close2" title="关闭">
+            <span></span>
+        </a>
+    </div>
+</div>
+<div class="bj_omit">
+    <div class="tc" id="tc_omit" style="height:381px;top: 50%;margin-top: -190px;">
+        <div class="tc_bt" style="width:628px">
+            <span>删除地址</span>
+            <img src="images/profile_yy.jpg">
+        </div>
+        <div class="tc_nr" style="width:628px;height:246px;overflow: hidden;">
+            <div class="from" style="background:url('images/pro_jg_03.png') no-repeat center 35px;height:246px;">
+                <p>您确定要删除改地址么？</p>
+                <ul class="save" style="position: absolute;bottom: 0;padding-top: 0;">
+                    <li class="first">取消</li>
+                    <li>确定</li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <a class="close3" title="关闭">
+            <span></span>
+        </a>
+    </div>
+</div>
+
+<footer class="foot">
+    <div class="inner">
+        <div class="foot_nav">
+            <ul>
+                <li>
+                    <h3>新手指南</h3>
+
+                    <p><a href="#">购物流程</a></p>
+
+                    <p><a href="#">免费注册</a></p>
+
+                    <p><a href="#"> 账户安全与信息</a></p>
+
+                    <p><a href="#">会员说明与级别</a></p>
+
+                    <p><a href="#"> 常见问题</a></p>
+                </li>
+                <li>
+                    <h3>支付及发票</h3>
+
+                    <p><a href="#">支付流程</a></p>
+
+                    <p><a href="#">货到付款</a></p>
+
+                    <p><a href="#">第三方平台支付</a></p>
+
+                    <p><a href="#">其他支付</a></p>
+
+                    <p><a href="#">发票问题</a></p>
+
+                </li>
+                <li>
+                    <h3>配送方式</h3>
+
+                    <p><a href="#">配送费收取标准</a></p>
+
+                    <p><a href="#">发货与签收</a></p>
+
+                    <p><a href="#">预约配送说明</a></p>
+
+                </li>
+                <li>
+
+
+                    <h3>售后服务 </h3>
+
+                    <p><a href="#">退换货流程</a></p>
+
+                    <p><a href="#">退换货策略</a></p>
+
+                    <p><a href="#">退款说明</a></p>
+
+                </li>
+                <li class="se">
+                    <h3>服务支持</h3>
+
+                    <p><a href="#">售前咨询 400-6038-365</a></p>
+
+                    <p><a href="#"> 售后咨询 400-6038-365</a></p>
+
+                    <p><a href="#">工作时间 9:00-17:00</a></p>
+                </li>
+                <li class="se se2">
+
+                    <h3>下载手机App</h3>
+                </li>
+                <li class="se se3">
+                    <h3>关注微信服务号</h3>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="foot_bottom">
+            <div class="foot_bottom1">
+                <a href="#">首页</a>
+                <a href="#">限时特惠</a>
+                <a href="#">精品推荐</a>
+                <a href="#">优惠套装</a>
+                <a href="#">绿优资讯</a>
+                <a href="#">关于绿优</a>
+            </div>
+
+            <div class="foot_bottom2">
+                <span>友情链接：</span>
+                <a href="http://www.stonexp.com" target="_blank" title="石材体验网">石材体验网</a>
+                <a href="http://www.bmlink.com/" target="_blank" title="中国建材网">中国建材网</a>
+                <a href="http://www.ezscl.com/" target="_blank" title="中国装饰材料网">中国装饰材料网</a>
+            </div>
+            <p>网站备案/许可证号：京ICP备15038043号 <span>Copyright © 2015 绿优全装建材商城 All Rights Reserved</span></p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $("#newly").click(function () {
+        $(".bj_add").show();
+    });
+    $(".close").click(function () {
+        $(".bj_add").hide();
+    });
+    $(".compile").click(function () {
+        $(".bj_compile").show();
+    })
+    $(".close2").click(function () {
+
+        $(".bj_compile").hide();
+    });
+    $(".del_btn").click(function () {
+        $(".bj_omit").show();
+    })
+    $(".close3").click(function () {
+        $(".bj_omit").hide()
+    })
+
+</script>
+
+
+</body>
+</html>

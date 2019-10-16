@@ -1,0 +1,73 @@
+/*商品详情页面*/
+#product_banner{height: 628px;width: 100%;min-width: 1200px;}
+#product_banner .product_t{height:40px;line-height: 40px;}
+#product_banner .product_t .product_tt li{float: left;padding: 0 16px;background: url("../images/product_yjt.png") no-repeat right center;}
+#product_banner .product_t .product_tt li a{color:#666;font-size:14px;}
+#product_banner .product_b{height:578px;padding-top: 10px;}
+.product_bld{ width: 350px; height:350px;border-bottom: 1px solid #e9e9e9;border-left: 1px solid #e9e9e9;}
+.product_sc{height: 45px;}
+.product_sc .sc{position: relative;}
+.product_sc .sc .sc3{position: absolute;right:0;color:#666;font-size: 14px;}
+.product_sc p{line-height: 45px;}
+.product_sc p a{font-size: 14px; color:#666;}
+.product_sc p img{padding-right: 10px;}
+.middle-img{width: 349px;height: 349px;}
+.small-img-box{padding:20px 30px 0;height:54px;position: relative;}
+.small-img-box .zjt{position: absolute;left: 0;top:32px}
+.small-img-box .yjt{position: absolute;right: 0;top:32px}
+.small-img-box li{float: left; margin-right: 4px;}
+.small-img-box li a{display: block;}
+.small-img-box li a img{width:50px;height:50px;}
+.small-img-box li:hover{border:2px solid #ff5000;}
+.product_bl{width: 349px; height: 474px;margin-right: 30px;}
+.good-detail-select{width:820px;height: 530px;}
+.good-detail-name{width:820px; height: 188px;}
+.good-detail-name .good-detail-bigName{font-size: 18px;color: #666;line-height: 68px; font-weight: bold; height: 68px;}
+.good-detail-bigName2{height:120px;}
+.good-detail-bigName2 .price{height: 60px;line-height: 56px;padding-right:100px;padding-left: 10px;}
+.good-detail-bigName2 .price .dt{margin-right:24px;text-align: justify;text-align-last: justify;width: 51px;color: #666;font-size: 14px;}
+.good-detail-bigName2 .price .dd .price01{color:#ff5000;font-size: 24px;font-weight: bold;}
+.good-detail-bigName2 .price .dd .price02{margin-top:20px;margin-right:19px;font-size:12px;color:#ff5000;display:block;width: 48px;height: 18px;border:1px solid #ff5000;text-align: center;line-height: 18px;}
+.good-detail-bigName2 .price .dd .price03,.good-detail-bigName2 .price .dd .price03 a{font-size: 12px;color:#666;}
+.good-list-selected{height:340px;padding-left: 10px;}
+.good-list-selected li span{ display: inline-block;text-align: justify; color:#666; text-align-last: justify; float: left;width: 51px; font-size: 14px;margin-right: 24px;}
+.good-list-selected .first,.product_amount{padding: 30px 0;height: 30px;line-height: 30px;}
+.good-selected-guige a{text-align: center; border: 1px solid #ff5000;background: url(../images/product_xzg.png) no-repeat scroll right bottom;  float: left;width:200px;height: 27px;line-height: 27px;font-size: 14px;color:#ff5000;}
+.good-selected-guige .gz{margin-left: 30px;}
+.good-selected-guige .gz2{border: 1px solid #d1d1d1;color: #666;background: none;}
+.good-selected-guige a:hover{border: 1px solid #ff5000;}
+.product_amount .amount input{position: absolute;left: 30px;outline:none;border:1px solid #ccc;height: 28px;line-height: 28px;width: 78px;text-align: center;}
+.product_amount .amount a{width: 28px;height: 28px;border:1px solid #ccc;text-align:center;background:#f1f1f1; }
+.product_amount .amount .minus{position: absolute;left: 0;}
+.product_amount .amount .plus{position: absolute;left: 110px;}
+
+.good-list-selected .gwc{height: 50px;line-height: 50px;}
+.good-list-selected .gwc a{font-size:18px;display: inline-block;text-align: center;line-height: 50px;font-weight: bold;}
+.good-list-selected .gwc .gwc_l{color:#fff;background: #ff5000;width: 190px;height: 50px;}
+.good-list-selected .gwc .gwc_r{color:#ff5000;background: #ffeee5;width: 138px;height: 48px;border: 1px solid #ff5000;margin-left: 50px;}
+#product_rmAi{height:291px;width: 100%;min-width: 1200px;}
+#product_rmAi .product_rmAi{height:291px;}
+#product_rmAi .product_rmAi .product_rmAi1{height: 40px;border-bottom: 1px solid #ff5000;}
+#product_rmAi .product_rmAi .product_rmAi1 a{font-size:14px;background: #ff5000;color:#fff;width:100px;height:40px;display: inline-block;text-align: center;line-height:40px;font-weight: bold;}
+#product_rmAi .product_rmAi .product_rmAi2{padding: 20px;}
+#product_rmAi .product_rmAi .product_rmAi2 li{text-align:center;float: left;width: 160px;margin-right: 50px;}
+#product_rmAi .product_rmAi .product_rmAi2 li a{display: block;}
+#product_rmAi .product_rmAi .product_rmAi2 li span{height:30px;line-height:30px;color:#ff5000;font-size: 14px;}
+#product_browse .product_browse .product_bowl{margin-right:40px;width: 210px;}
+#product_browse .product_browse .product_bowl .product_bowLt{margin-bottom:20px;width: 210px;height: 40px;line-height:40px;background: #f7f7f7;text-align: center;}
+#product_browse .product_browse .product_bowl .product_bowLt a{color:#666;font-size:14px;font-weight: bold;}
+#product_browse .product_browse .product_bowl .product_bowLb{height:780px;background: #f7f7f7;width: 170px;padding: 20px 20px 0}
+#product_browse .product_browse .product_bowl .product_bowLb .Wx{height: 200px;}
+#product_browse .product_browse .product_bowl .product_bowLb .Wx .weiXig{display: block;position: relative;}
+#product_browse .product_browse .product_bowl .product_bowLb .Wx .zz{position: absolute;left: 0;bottom:0;background: url(../images/pro_zz.png);width: 170px;}
+#product_browse .product_browse .product_bowl .product_bowLb .Wx .zz p{height:15px;line-height: 15px;color:#fff;font-size: 12px;}
+#product_browse .product_browse .product_bowr{width:950px;}
+#product_browse .product_browse .product_bowr .product_rmAi1{height:40px;line-height: 40px;border-bottom: 1px solid #ff5000;}
+#product_browse .product_browse .product_bowr .product_rmAi1 li{float: left;width: 100px;text-align: center;margin-right: 8px;}
+#product_browse .product_browse .product_bowr .product_rmAi1 .first,#product_browse .product_browse .product_bowr .product_rmAi1 li:hover{background: #ff5000;}
+#product_browse .product_browse .product_bowr .product_rmAi1 .first a{color: #fff;}
+#product_browse .product_browse .product_bowr .product_rmAi1 li a{font-size: 14px;color:#666;}
+#product_browse .product_browse .product_bowr .product_rmAi1 li a:hover{color: #fff;}
+#product_browse .product_browse .pro_mous{position: absolute;left: 250px;top: 60px;width: 950px;height:1289px;background: url(../images/zy_t4.jpg)}
+
+

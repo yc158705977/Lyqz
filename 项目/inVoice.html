@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>增票资质1</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .foot {background: #fff;}
+        .tc .tc_nr .from p {position: absolute;top: 120px;height: 32px;line-height: 32px; color: #666;font-size: 18px;font-weight: bold;}
+        .bj_omit{position: fixed;left: 0; top: 0; z-index: 100; width: 100%;height: 100%; background: url(images/zhezhao.png) left top;display: none;}
+        .personal_mainR .proFile2 .first {margin: 0 15px; }
+        .personal_mainR .proFile2 span {color: #ff0000;}
+        .invoice .voice .fd .last4 ul li,.vo_add form .item .label_fl ul li {float: left; width: 100px;height: 30px; font-size: 14px; line-height: 30px; text-align: center;}
+        .voice_add p {font-size: 14px;color: #666;}
+        .voice_add p a {color: #fff; background: #ff5000;width: 115px; height: 30px; display: inline-block;text-align: center; margin-left: 18px;}
+        .vo_add form .item select{ width: 90px;height: 32px;outline: none; border-color: #bbb;}
+    </style>
+</head>
+<body style="background: #f5f5f5;">
+<div id="shortcut">
+    <div class="inner">
+        <div class="shortcut_w">
+            <ul class="fl">
+                <li>
+                    <a href="#"> 采购城市： <span title="北京">北京</span><img class="xl" src="images/zy_xl.png"/> </a>
+                </li>
+            </ul>
+            <ul class="fr">
+                <li>
+                    <a href="#" target="_blank">ai小王子</a>
+                    <a href="#" target="_blank">退出</a>
+                </li>
+                <li class="spacer"></li>
+                <li><a href="#">我的订单</a></li>
+                <li class="spacer"></li>
+                <li>
+                    <a href="#">我的绿优<img class="xl" src="images/zy_xl.png"/></a>
+                </li>
+                <li class="spacer"></li>
+                <li><a href="#"><img class="xwx" src="images/zy_xsj.png"/> 手机客户端</a></li>
+                <li class="spacer"></li>
+                <li><a href="#"><img class="xwx" src="images/zy_xwx.png"/> 关于绿优 <img class="xl" src="images/zy_xl.png"/></a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div id="personal_nav">
+    <div class="inner">
+        <div class="shortcut_nav">
+            <div class="shortcut_bloGo fl">
+                <a href="#"><img src="images/per_logo.png"/></a>
+            </div>
+            <div class="shortcut_search2 fl">
+                <input type="text" class="fl" placeholder="绿优全装三合一普通砂浆">
+                <button type="button" class="fr"><img src="images/person_ss.png"/></button>
+            </div>
+            <div class="shortcut_shopping2 fr">
+                <img src="images/zy_xgwc.png"/>
+                <a href="#">我的购物车</a>
+                <i>1</i>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="personal_main" class="bj2">
+    <div class="inner">
+        <div class="personal_main">
+            <div class="personal_mainL fl">
+                <dl>
+                    <dt><a href="#">订单中心</a></dt>
+                    <dd><a href="All_indent.html">我的订单</a></dd>
+                    <dd><a href="#">评价</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">客户服务</a></dt>
+                    <dd><a href="My_favorite.html">我的收藏</a></dd>
+                    <dd><a href="#">退货/退款</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">资产中心</a></dt>
+                    <dd><a href="#">绿优钱包</a></dd>
+                    <dd><a href="#">我的积分</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">企业号</a></dt>
+                    <dd><a href="#">子账号</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">个人设置</a></dt>
+                    <dd><a href="personal.html">个人信息</a></dd>
+                    <dd><a href="safety.html">账户安全</a></dd>
+                    <dd><a href="Profile.html">收货地址</a></dd>
+                    <dd class="f5"><a href="#">增票资质</a></dd>
+                </dl>
+            </div>
+            <div class="personal_mainR fl" style="">
+                <div class="personal_mainR1">
+                    <div class="span">
+                        <span>增票资质</span>
+                    </div>
+
+                </div>
+                <div class="proFile">
+                    <ul class="proFile2">
+                        <li>您还未添加增票资质</li>
+                        <li class="first"><a href="#" id="newly2">现在添加</a></li>
+                        <li><span class="tj">注意：有效增值税发票开票资质仅为一个。</span></li>
+                    </ul>
+
+                    <div id="voice_tj" style="height: 537px;display: none;">
+                        <form action="" method="post" id="personalForm">
+                            <ul class="invoice">
+                                <li class="voice">
+                                    <ul class="fd">
+                                        <li class="first"><span style="color:red;padding-right: 10px;">*</span>单位名称：
+                                        </li>
+                                        <li class="last"><input type="text"></li>
+                                    </ul>
+                                </li>
+
+                                <li class="voice">
+                                    <ul class="fd">
+                                        <li class="first"><span style="color:red;padding-right: 10px;">*</span>纳税人识别码：
+                                        </li>
+                                        <li class="last"><input type="text"></li>
+                                    </ul>
+                                </li>
+
+                                <li class="voice">
+                                    <ul class="fd">
+                                        <li class="first"><span style="color:red;padding-right: 10px;">*</span>注册地址：
+                                        </li>
+                                        <li class="last"><input type="text"></li>
+                                    </ul>
+                                </li>
+
+                                <li class="voice">
+                                    <ul class="fd">
+                                        <li class="first"><span style="color:red;padding-right: 10px;">*</span>注册电话：
+                                        </li>
+                                        <li class="last"><input type="text"></li>
+                                    </ul>
+                                </li>
+
+                                <li class="voice">
+                                    <ul class="fd">
+                                        <li class="first"><span style="color:red;padding-right: 10px;">*</span>开户银行：
+                                        </li>
+                                        <li class="last"><input type="text"></li>
+                                    </ul>
+                                </li>
+
+                                <li class="voice">
+                                    <ul class="fd">
+                                        <li class="first"><span style="color:red;padding-right: 10px;">*</span>银行账户：
+                                        </li>
+                                        <li class="last"><input type="text"></li>
+                                    </ul>
+                                </li>
+                                <li class="voice" style="height: 118px;margin-bottom: 50px;position: relative;">
+                                    <ul class="fd">
+                                        <li class="first"><span style="color:red;padding-right: 10px;">*</span>营业执照：
+                                        </li>
+                                        <li class="last2">
+                                            <input type="text" name="file" id="file" value="点击上传" class="fl">
+                                        </li>
+                                        <li class="last3"><p class="fr">图片文件大小须≤5MB，文件格式支持jpg、png、gif、bmp、jpeg</p></li>
+                                    </ul>
+                                </li>
+                                <li class="voice">
+                                    <ul class="fd">
+                                        <li class="first">&nbsp;</li>
+                                        <li class="last4">
+                                            <ul>
+                                                <li style="background: #ff5000;margin-right: 20px;"><a id="quEd"
+                                                                                                       href="#"
+                                                                                                       style="color:#fff;">确定</a>
+                                                </li>
+                                                <li style="background: #e6e6e6;"><a href="#" style="color:#666;">取消</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="bj_omit">
+    <div class="tc" id="tc_omit" style="height:381px;top: 50%;margin-top: -190px;">
+        <div class="tc_bt" style="width:628px">
+            <span>增票资质添加</span>
+            <img src="images/profile_yy.jpg">
+        </div>
+        <div class="tc_nr" style="width:628px;height:246px;overflow: hidden;">
+            <div class="from" style="background:url('images/invo_cg.png') no-repeat center 5px;height:246px;">
+                <p style="left:190px;">恭喜您，增票资质添加成功</p>
+
+                <p style="top: 157px;left: 152px;">我们会在一个工作日内完成审核工作。</p>
+                <ul class="save" style="position: absolute;bottom: 0;padding-top: 0;left: 260px;">
+                    <li><a id="quEd2" href="inVoice2.html" style="color:#fff;">确定</a></li>
+                </ul>
+            </div>
+        </div>
+        <a class="close3" title="关闭">
+            <span></span>
+        </a>
+    </div>
+</div>
+
+
+<footer class="foot">
+    <div class="inner">
+        <div class="foot_nav">
+            <ul>
+                <li>
+                    <h3>新手指南</h3>
+
+                    <p><a href="#">购物流程</a></p>
+
+                    <p><a href="#">免费注册</a></p>
+
+                    <p><a href="#"> 账户安全与信息</a></p>
+
+                    <p><a href="#">会员说明与级别</a></p>
+
+                    <p><a href="#"> 常见问题</a></p>
+                </li>
+                <li>
+                    <h3>支付及发票</h3>
+
+                    <p><a href="#">支付流程</a></p>
+
+                    <p><a href="#">货到付款</a></p>
+
+                    <p><a href="#">第三方平台支付</a></p>
+
+                    <p><a href="#">其他支付</a></p>
+
+                    <p><a href="#">发票问题</a></p>
+
+                </li>
+                <li>
+                    <h3>配送方式</h3>
+
+                    <p><a href="#">配送费收取标准</a></p>
+
+                    <p><a href="#">发货与签收</a></p>
+
+                    <p><a href="#">预约配送说明</a></p>
+
+                </li>
+                <li>
+
+
+                    <h3>售后服务 </h3>
+
+                    <p><a href="#">退换货流程</a></p>
+
+                    <p><a href="#">退换货策略</a></p>
+
+                    <p><a href="#">退款说明</a></p>
+
+                </li>
+                <li class="se">
+                    <h3>服务支持</h3>
+
+                    <p><a href="#">售前咨询 400-6038-365</a></p>
+
+                    <p><a href="#"> 售后咨询 400-6038-365</a></p>
+
+                    <p><a href="#">工作时间 9:00-17:00</a></p>
+                </li>
+                <li class="se se2">
+
+                    <h3>下载手机App</h3>
+                </li>
+                <li class="se se3">
+                    <h3>关注微信服务号</h3>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+        <div class="foot_bottom">
+            <div class="foot_bottom1">
+                <a href="#">首页</a>
+                <a href="#">限时特惠</a>
+                <a href="#">精品推荐</a>
+                <a href="#">优惠套装</a>
+                <a href="#">绿优资讯</a>
+                <a href="#">关于绿优</a>
+            </div>
+
+            <div class="foot_bottom2">
+                <span>友情链接：</span>
+                <a href="http://www.stonexp.com" target="_blank" title="石材体验网">石材体验网</a>
+                <a href="http://www.bmlink.com/" target="_blank" title="中国建材网">中国建材网</a>
+                <a href="http://www.ezscl.com/" target="_blank" title="中国装饰材料网">中国装饰材料网</a>
+            </div>
+            <p>网站备案/许可证号：京ICP备15038043号 <span>Copyright © 2015 绿优全装建材商城 All Rights Reserved</span></p>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $("#newly2").click(function () {
+        $("#voice_tj").show();
+    });
+    $("#quEd").click(function () {
+        $(".bj_omit").show();
+    });
+    $(".close3").click(function () {
+        $(".bj_omit").hide()
+    })
+
+</script>
+</body>
+</html>
